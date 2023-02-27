@@ -1,0 +1,72 @@
+.character-item {
+	padding: 1rem;
+	box-shadow: 2px 4px 8px rgb(0 0 0 / 50%);
+	margin-right: 1rem;
+	border-radius: 14px;
+	text-align: center;
+}
+
+.character-item:hover,
+.character-item:active,
+.character-item:visited {
+  animation: moveIn 500ms ease-out;
+}
+
+.character-item a {
+	color: black;
+	text-decoration: none;
+}
+
+.character-item__avatar img {
+	max-width: 12vw;
+}
+
+.character-item-details {
+	display: flex;
+	flex-direction: column;
+}
+
+.character-item-details svg {
+	margin-right: 0.75rem;
+}
+
+.character-item-details h6 {
+	display: inline-block;
+}
+
+.character-item-actions {
+	margin-top: 1.5rem;
+}
+
+.alive {
+	color: tomato;
+	animation: 5s opacityToggle ease-in infinite;
+}
+
+.unknown {
+	color: teal;
+}
+
+@keyframes opacityToggle {
+	from {
+		opacity: 0.4;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes moveIn {
+	from {
+    transform: translateY(-10px);
+	}
+	to {
+    transform: translate(0);
+	}
+}
+
+.character-item-details__status {
+}
+
+.character-item-details__gender {
+}

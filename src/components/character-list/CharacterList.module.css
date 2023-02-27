@@ -1,0 +1,10 @@
+.character-list ul{
+  list-style-type: none;
+  display: flex;
+}
+
+@media (max-width: 480px) {
+  .character-list ul{ 
+    display: block;
+  }
+}

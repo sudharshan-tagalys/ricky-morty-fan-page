@@ -1,0 +1,27 @@
+.radio{
+  border-radius: 14px;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem 1rem 2rem;
+  background: white;
+  width: fit-content;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+.search-container{
+  position: relative;
+  padding: 1rem;
+  margin-right: 1rem;
+}
+
+.search-container span{
+  position: absolute;
+  top: 35%;
+  right: 7%;
+}
+
+.search-container input {
+  width: 40vw;
+  padding: 1rem;
+}

@@ -1,0 +1,90 @@
+.character-container {
+	padding: 2rem;
+	width: 85vw;
+	margin: auto;
+}
+
+.character-basic-detail {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 1rem;
+	padding: 1rem;
+}
+
+.character-basic-detail h2,
+.character-basic-detail span {
+	padding: 1rem;
+}
+
+.character-basic-detail h2::after {
+	content: "|";
+	padding-left: 1rem;
+}
+
+.character-addon-detail {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.character-addon-detail div {
+	padding-left: 10rem;
+	padding-right: 2rem;
+	height: 60vh;
+	overflow-y: scroll;
+}
+@media (max-width: 768px) {
+.character-addon-detail img{
+  max-width: 25vw;
+}
+
+.character-addon-detail div {
+  padding: 1rem 1.5rem;
+}
+}
+
+.alive {
+	color: tomato;
+	animation: 5s opacityToggle ease-in infinite;
+}
+
+.unknown {
+	color: teal;
+}
+
+@keyframes opacityToggle {
+	from {
+		opacity: 0.4;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@media (max-width: 480px) {
+	.character-container {
+		width: 90vw;
+	}
+
+  .character-basic-detail h2::after {
+    content: "";
+  }
+
+	.character-basic-detail {
+		flex-direction: column;
+    margin-bottom: 0;
+	}
+
+	.character-basic-detail h2,
+	.character-basic-detail span {
+		padding: 0.25rem;
+	}
+
+  .character-addon-detail {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem 0;
+    align-items: center;
+  }
+}

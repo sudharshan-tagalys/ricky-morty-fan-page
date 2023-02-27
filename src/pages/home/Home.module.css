@@ -1,0 +1,19 @@
+.filter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.tab-container {
+  width: 90vw;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 768px) {
+  .filter-container {
+    flex-direction: column;
+  }
+}

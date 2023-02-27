@@ -1,0 +1,30 @@
+.header {
+  display: flex;
+  align-items: center;
+  padding: 0 1rem 0 2rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 50%);
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+.header h1 {
+  flex-grow: 2;
+}
+
+.header .actions {
+  flex-grow: 0.25;
+}
+
+.header a{
+  text-decoration: none;
+  color: black;
+}
+
+.header a:focus,
+.header a:visited,
+.header a:link{
+  text-decoration: none;
+  color: black;
+  outline: none;
+}
