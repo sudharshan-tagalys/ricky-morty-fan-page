@@ -707,13 +707,12 @@ function App() {
 			/>
 			<Switch>
 				<Route path={"/"} exact>
-					<Redirect to="/login"/>
+					{isLoggedIn() ? <Redirect to="/home"/> : <Redirect to="/login"/>}
 				</Route>
 				<Route path="/login">
-					<Login setLoggedIn={setLoggedIn}/>
+					{isLoggedIn() ? <Redirect to="/home"/> : <Login setLoggedIn={setLoggedIn}/>}
 				</Route>
 				<Route path={[`/home`, `/character/:character_id`]}>
-					{console.log("loggedIn", loggedIn, typeof loggedIn)}
 					{isLoggedIn() ?
 						<Fragment>
 							<Route path="/home">
