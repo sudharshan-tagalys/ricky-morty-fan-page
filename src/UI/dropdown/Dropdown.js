@@ -24,7 +24,7 @@ const Dropdown = (props) => {
 	};
 
 	return (
-		<div className={classes.dropdown} data-cy-action={"select-universe"}>
+		<div className={classes.dropdown} data-action={"select-universe"}>
 			<DropdownSelect
 				className={classes["dropdown-select"]}
 				filterable={false}

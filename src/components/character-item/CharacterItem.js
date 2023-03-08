@@ -24,7 +24,7 @@ const CharacterItem = (props) => {
 	}
 
 	return (
-		<li className={classes["character-item"]} data-cy-character-id={props.id}>
+		<li className={classes["character-item"]} data-character-id={props.id} data-character-name={props.name}>
 			<Link to={`/character/${props.id}`}>
 				<Card>
 					<div className={classes["character-item__avatar"]}>

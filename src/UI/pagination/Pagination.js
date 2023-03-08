@@ -36,14 +36,14 @@ const Pagination = (props) => {
 					}
 					onClick={props.onPageNoChange}
 					value="previous"
-					data-cy-pagination={'previous'}
+					data-pagination={'previous'}
 				>
 					Previous
 				</button>
 			</li>
 			{pages.map((pageNo) => {
 				return (
-					<li id={pageNo} key={pageNo}>
+					<li id={pageNo} key={pageNo} data-page={pageNo}>
 						<button
 							className={props.activePage === pageNo ? classes["pagination-link-active"]: ''}
 							onClick={props.onPageNoChange}
@@ -63,7 +63,7 @@ const Pagination = (props) => {
 					}
 					onClick={props.onPageNoChange}
 					value="next"
-					data-cy-pagination={'next'}
+					data-pagination={'next'}
 				>
 					Next
 				</button>

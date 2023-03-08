@@ -17,7 +17,7 @@ const CustomUniverse = (props) => {
 			<div className={classes["modal-header"]}>
 				<h3>{props.modalTitle}</h3>
 			</div>
-			<div className={classes["modal-content"]} data-cy-block={"new-universe-input"}>
+			<div className={classes["modal-content"]} data-block={"new-universe-input"}>
 				<Input
 					inputConfig={{
 						...customUniverseInputConfig,

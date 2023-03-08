@@ -16,7 +16,7 @@ const searchInput = (searchInputConfig) => {
 				placeholder={searchInputConfig.placeholder}
 				onChange={searchInputConfig.onChangeHandler}
 				dir="auto"
-				data-cy-input={"search"}
+				data-input={"search"}
 			/>
 		</div>
 	);
@@ -33,7 +33,7 @@ const radioInput = (radioInputConfig) => {
 	} = radioInputConfig;
 
 	return (
-		<div className={classes.radio} data-cy-action={"radio-group"}>
+		<div className={classes.radio} data-action={"radio-group"}>
 			<RadioGroup
 				id={id}
 				className={`docs-radio-regular ${className}`}

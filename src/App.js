@@ -552,7 +552,7 @@ function App() {
 											value: searchCharacterByNameValue,
 										}}
 									/>
-									<Button data-cy-action={"reset-filter"} onClick={resetSearchCharacterValues}>
+									<Button data-action={"reset-filter"} onClick={resetSearchCharacterValues}>
 										{" "}
 										Reset Filter{" "}
 									</Button>

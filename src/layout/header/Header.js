@@ -10,14 +10,15 @@ const Header = (props) => {
 			<Link to="/home">
 				<h1>Rick & Morty Fan Page</h1>
 			</Link>
-			<div className={`${classes.actions} header-actions-block`} data-cy-block={"header-actions"}>
+			<div className={`${classes.actions} header-actions-block`} data-block={"header-actions"}>
 				<Button
+					data-cta="create-universe"
 					className="bp4-icon-plus bp4-outlined create-universe"
 					onClick={props.onAddUniverse}
 				>
 					Universe
 				</Button>
-				<Button className={'logout'} onClick={props.onLogout}>
+				<Button className={'logout'} data-cta="logout" onClick={props.onLogout}>
 					Logout
 				</Button>
 			</div>

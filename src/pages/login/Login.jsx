@@ -62,6 +62,7 @@ function Login({setLoggedIn}) {
       <h1>Log in to your account</h1>
       <div className='login-input-block'>
         <input
+          data-input="email"
           placeholder='Enter user name'
           type={"text"}
           className="login-input user-name"
@@ -69,6 +70,7 @@ function Login({setLoggedIn}) {
           onChange={onChangeUserName}
         />
         <input
+          data-input="password"
           placeholder='Enter password'
           type={"password"}
           className="login-input password"
@@ -76,7 +78,9 @@ function Login({setLoggedIn}) {
           onChange={onChangePassword}
         />
       </div>
-      <button onClick={loginToAccount}>Login</button>
+      <button
+        data-cta="login"
+        onClick={loginToAccount}>Login</button>
       {state.error !== "" ? <p className='login-error'>{state.error}</p> : null}
     </div>
   )
