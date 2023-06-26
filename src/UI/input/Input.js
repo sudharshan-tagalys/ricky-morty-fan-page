@@ -1,6 +1,6 @@
 import React from "react";
 
-import { RadioGroup } from "@blueprintjs/core";
+import { RadioGroup, Radio } from "@blueprintjs/core";
 
 import classes from "./Input.module.css";
 
@@ -33,7 +33,7 @@ const radioInput = (radioInputConfig) => {
 	} = radioInputConfig;
 
 	return (
-		<div className={classes.radio} data-action={"radio-group"}>
+		<div className={classes.radio} data-section="character-status-selector">
 			<RadioGroup
 				id={id}
 				className={`docs-radio-regular ${className}`}

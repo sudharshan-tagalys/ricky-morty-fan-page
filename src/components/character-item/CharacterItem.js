@@ -28,7 +28,11 @@ const CharacterItem = (props) => {
 			<Link to={`/character/${props.id}`}>
 				<Card>
 					<div className={classes["character-item__avatar"]}>
-						<img src={props.avatar} alt="Character Avatar Not Found" />
+						<img
+							data-character-img-src={props.avatar}
+							src={props.avatar}
+							alt="Character Avatar Not Found"
+						/>
 					</div>
 					<h6 className={classes["character-item__avatar-name"]}>
 						{props.name}
@@ -36,7 +40,10 @@ const CharacterItem = (props) => {
 				</Card>
 			</Link>
 			<div className={classes["character-item-details"]}>
-				<span className={classes["character-item-details__status"]}>
+				<span
+					className={classes["character-item-details__status"]}
+					data-character-status={props.status.toLowerCase()}
+				>
 					{props.status === "Alive" && (
 						<FaHeartbeat className={classes.alive} />
 					)}
@@ -48,7 +55,10 @@ const CharacterItem = (props) => {
 					)}
 					<h6>{props.status}</h6>
 				</span>
-				<span className={classes["character-item-details__gender"]}>
+				<span
+					className={classes["character-item-details__gender"]}
+					data-character-gender={props.gender.toLowerCase()}
+				>
 					{props.gender === "Male" && <FaMale />}
 					{props.gender === "Female" && <FaFemale />}
 					<h6>{props.gender}</h6>

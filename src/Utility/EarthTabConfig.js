@@ -1,9 +1,9 @@
 // Dropdown
 export const characterSearchOptions = [
-	{ id: 1, value: "", title: "All Characters" },
-	{ id: 2, value: "male", title: "Male Characters" },
-	{ id: 3, value: "female", title: "Female Characters" },
-	{ id: 4, value: "unknown", title: "Unknown Characters" },
+	{ id: 1, value: "", title: "All Characters", key: "all_characters" },
+	{ id: 2, value: "male", title: "Male Characters", key: "male_characters" },
+	{ id: 3, value: "female", title: "Female Characters", key: "female_characters" },
+	{ id: 4, value: "unknown", title: "Unknown Characters",key: "unkown_characters" },
 ];
 
 // Input

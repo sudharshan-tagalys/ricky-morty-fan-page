@@ -17,6 +17,7 @@ const Dropdown = (props) => {
 				active={modifiers.active}
 				disabled={modifiers.disabled}
 				key={selectItem.id}
+				data-item-value={selectItem.key}
 				onClick={handleClick}
 				text={text}
 			/>
@@ -33,7 +34,11 @@ const Dropdown = (props) => {
 				onItemSelect={props.onSelect}
 				noResults={<MenuItem2 disabled={true} text="No results." />}
 			>
-				<Button text={props.selectedItemOption.title} rightIcon="caret-down" />
+				<Button
+					text={props.selectedItemOption.title}
+					rightIcon="caret-down"
+					data-item-value={props.selectedItemOption.key}
+				/>
 			</DropdownSelect>
 		</div>
 	);

@@ -552,7 +552,7 @@ function App() {
 											value: searchCharacterByNameValue,
 										}}
 									/>
-									<Button data-action={"reset-filter"} onClick={resetSearchCharacterValues}>
+									<Button className="reset-cta-btn" data-action={"reset-filter"} onClick={resetSearchCharacterValues}>
 										{" "}
 										Reset Filter{" "}
 									</Button>
